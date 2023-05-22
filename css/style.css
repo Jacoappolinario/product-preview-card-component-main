@@ -1,0 +1,156 @@
+body {
+  background: #f2eae2;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-preview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product-image-desktop {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.product-image-mobile {
+  display: none;
+}
+
+.product-preview-information {
+  background: #ffffff;
+  padding: 2rem;
+}
+
+.product-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.313rem;
+  color: #6c7289;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product-subtitle {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #1c232b;
+  margin-bottom: 24px;
+}
+
+.product-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.438rem;
+  color: #6c7289;
+  margin-bottom: 29px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1.188rem;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3d8168;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #6c7289;
+  text-decoration-line: line-through;
+}
+
+.product-button {
+  background: #3d8168;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.726rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.product-button a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.product-button:active {
+  background: #1a4032;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: auto 1rem;
+  }
+
+  .product-preview-content {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image-desktop {
+    display: none;
+  }
+
+  .product-image-mobile {
+    display: block;
+  }
+
+  .product-preview-information {
+    padding: 1.5rem;
+  }
+
+  .product-title {
+    margin-bottom: 12px;
+  }
+
+  .product-subtitle {
+    margin-bottom: 16px;
+  }
+
+  .product-description {
+    margin-bottom: 24px;
+  }
+
+  .product-price {
+    margin-bottom: 20px;
+  }
+}
